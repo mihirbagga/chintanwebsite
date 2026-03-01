@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --sand: #D8C3A5;
+  --sand-light: #E8DCCB;
+  --sand-lighter: #F2EBE0;
+  --sand-pale: #F7F2EB;
+  --cream: #FAF6F0;
+  --ink: #1A1714;
+  --ink-light: #3D3830;
+  --ink-muted: #6B6358;
+  --ink-faint: #9E9588;
+  --red: #C23B22;
+  --red-soft: rgba(194, 59, 34, 0.06);
+  --red-glow: rgba(194, 59, 34, 0.12);
+  --white: #FFFFFF;
+  --fd: 'Cormorant Garamond', Georgia, serif;
+  --fb: 'Instrument Sans', -apple-system, sans-serif;
+  --eo: cubic-bezier(0.16, 1, 0.3, 1);
+  --es: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--fb);
+  color: var(--ink);
+  background: var(--cream);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Base Utility Classes */
+.btn-prime {
+  font-family: var(--fb);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.6rem;
+  background: var(--red);
+  color: var(--cream);
+  border-radius: 100px;
+  transition: all 0.3s var(--es);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-prime:hover {
+  background: #D4442B;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(194, 59, 34, 0.2);
+}
+
+/* Sections */
+section {
+  position: relative;
+  z-index: 1;
+}
